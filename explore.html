@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Tamil Nadu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .district-card {
+            margin-bottom: 20px;
+        }
+        .district-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-4">
+        <h1>Explore Tamil Nadu</h1>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Districts</h2>
+        <input type="text" id="filterInput" class="form-control mb-4" placeholder="Search for districts...">
+
+        <div class="row" id="districtsContainer">
+            <!-- Example District Card -->
+            <div class="col-md-4 district-card" data-name="Chennai">
+                <img src="D:\html css\Exam\image\ooty.jpg" alt="Chennai" class="district-img">
+                <h5>Ooty</h5>
+                <p>Ooty is known forIts scenic beauty, colonial charm, tribal culture, Ooty toy train, mountains, lakes, gardens,
+                     waterfalls, wildlife and panoramic views </p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Coimbatore">
+                <img src="D:\html css\Exam\image\kodai.jpg" alt="Coimbatore" class="district-img">
+                <h5>Kodaikanal</h5>
+                <p>Kodaikanal is famous for its textile industry and beautiful hills.</p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Madurai">
+                <img src="D:\html css\Exam\image\cbe.jpg" alt="Madurai" class="district-img">
+                <h5>Coimbatore</h5>
+                <p>Coimbatore is known for its ancient temples and rich history.</p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Chennai">
+                <img src="D:\html css\Exam\image\madurai.jpg" alt="Chennai" class="district-img">
+                <h5> Madurai</h5>
+                <p>Madurai, is known for its cultural heritage and beautiful beaches.</p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Coimbatore">
+                <img src="D:\html css\Exam\image\chennai.jpg" alt="Coimbatore" class="district-img">
+                <h5>Chennai</h5>
+                <p>Chennai, the capital of Tamil Nadu, is known for its cultural heritage and beautiful beaches.</p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Madurai">
+                <img src="D:\html css\Exam\image\mappulapuram.jpg" alt="Madurai" class="district-img">
+                <h5>Mahabalipuram</h5>
+                <p>Mahabalipuram is known for its ancient temples and rich history.</p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Chennai">
+                <img src="D:\html css\Exam\image\ramaeshwaram.jpg" alt="Chennai" class="district-img">
+                <h5>Rameshwaram</h5>
+                <p>Rameshwaram is known for its cultural heritage and beautiful beaches.</p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Coimbatore">
+                <img src="D:\html css\Exam\image\kanyakumari.jpg" alt="Coimbatore" class="district-img">
+                <h5> Kanyakumari</h5>
+                <p>Kanyakumari is famous for its textile industry and beautiful hills.</p>
+            </div>
+            <div class="col-md-4 district-card" data-name="Madurai">
+                <img src="D:\html css\Exam\image\thanjavur.jpg" alt="Madurai" class="district-img">
+                <h5> Thanjavur</h5>
+                <p>Thanjavur is known for its ancient temples and rich history.</p>
+            </div>
+            <!-- Add more districts here -->
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Travel Webpage</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Filter function
+        $(document).ready(function() {
+            $('#filterInput').on('keyup', function() {
+                var value = $(this).val().toLowerCase();
+                $('#districtsContainer .district-card').filter(function() {
+                    $(this).toggle($(this).data('name').toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+</html>

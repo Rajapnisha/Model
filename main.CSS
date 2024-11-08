@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient( #070219, #140033);
+    color:white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Basic Reset and Style */
+nav {
+   
+    position: relative; /* Position for menu icon */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distributes items evenly */
+}
+
+nav ul li {
+    background-color:#290a58; /* Box color */
+    padding: 10px 80px; /* Padding inside each box */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px; /* Margin between boxes */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    display: block; /* Makes the full area clickable */
+    text-align: center; /* Center the text */
+}
+
+/* Hover effect */
+nav ul li:hover {
+    background-color:  #545671;/* Change color on hover */
+}
+
+/* Responsive Design */
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none; /* Hide checkbox */
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Size of the menu icon */
+    color: white; /* Color of the icon */
+    padding: 10px; /* Padding around the icon */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* On screens smaller than 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        display: none; /* Hide menu by default */
+    }
+
+    /* Show menu icon */
+    .menu-icon {
+        display: block; /* Show on mobile screens */
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex; /* Show menu when checked */
+    }
+
+    /* Box styling for mobile */
+    nav ul li {
+        width: 100%; /* Full width on mobile */
+        margin: 5px 0; /* Vertical margin */
+    }
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+main {
+    flex: 2;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.floated-image {
+    float: left;
+    margin-right: 15px;
+}
+
+footer {
+    background: linear-gradient( #070219, #140033);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Travel Webpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .service-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-4">
+        <h1>Our Services</h1>
+    </header>
+
+    <div id="servicesCarousel" class="carousel slide mt-5" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="D:\html css\Exam\image\customized-tour.jpg" alt="Custom Tours" class="service-img" height="600">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Tours</h5>
+                                <p class="card-text">We design personalized travel experiences tailored to your interests, ensuring a memorable journey with us exploring Tamil Nadu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="D:\html css\Exam\image\local guide.jpg" alt="Local Guides" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Local Guides</h5>
+                                <p class="card-text">Our knowledgeable local guides provide unique insights and recommendations to enhance your travel experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="D:\html css\Exam\image\accmodation.jpg" alt="Accommodation" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Accommodation</h5>
+                                <p class="card-text">We offer a range of accommodation options, from budget stays to luxury resorts, to suit every traveler's needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="D:\html css\Exam\image\transport log.jpg" alt="Transportation" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Transportation</h5>
+                                <p class="card-text">Reliable transportation services including airport transfers, car rentals, and guided tours are available to make your journey smooth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="D:\html css\Exam\image\travel insu.jpg" alt="Travel Insurance" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Travel Insurance</h5>
+                                <p class="card-text">Protect yourself with our travel insurance options, ensuring peace of mind during your travels.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="D:\html css\Exam\image\ittinary plan.jpg" alt="Itinerary Planning" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Itinerary Planning</h5>
+                                <p class="card-text">Let us help you plan the perfect itinerary with must-see attractions, dining options, and activities tailored to your preferences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Travel Webpage</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
